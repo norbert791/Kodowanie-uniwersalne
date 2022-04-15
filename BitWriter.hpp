@@ -3,6 +3,7 @@
 
 class BitWriter {
     public:
+        BitWriter() = default;
         BitWriter(const std::string& outputName);
         void writeBit(const bool input);
         void open(const std::string& outputName);

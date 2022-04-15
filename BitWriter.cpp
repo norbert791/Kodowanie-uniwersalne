@@ -43,5 +43,12 @@ void BitWriter::open(const std::string& filename) {
 }
 
 void BitWriter::close() {
+    if (bufferCounter > 0) {
+        while (bufferCounter < 8) {
+            buffer = (uc)(buffer << 1);
+            bufferCounter++;
+        }
+        output.put(buffer);
+    }
     output.close();
 }

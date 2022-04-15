@@ -27,3 +27,22 @@ bool BitReader::getBit() {
     }
     return result;
 }
+
+void BitReader::open(const std::string& filename) {
+    if (input.is_open()) {
+        input.close();
+    }
+    input.open(filename);
+    buffer = 0;
+    bufferCounter = 0;
+}
+
+void BitReader::close() {
+    if (input.is_open()) {
+        input.close();
+    }
+}
+
+bool BitReader::good() {
+    return input.good();
+}

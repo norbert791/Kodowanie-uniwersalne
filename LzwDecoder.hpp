@@ -6,7 +6,8 @@ class LzwDecoder {
         LzwDecoder(std::map<std::string, uint32_t> startingAlphabet, uint32_t firstCode);
         std::string decode(uint32_t code);
         std::string initialize() const;
-    
+        bool good();
+
     private:
         std::map<uint32_t, std::string> dictionary;
         std::string previousSymbol = "";
