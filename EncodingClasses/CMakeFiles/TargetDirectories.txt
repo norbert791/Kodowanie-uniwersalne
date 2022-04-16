@@ -1,0 +1,3 @@
+/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/CMakeFiles/encoder.dir
+/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/CMakeFiles/edit_cache.dir
+/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/CMakeFiles/rebuild_cache.dir

@@ -1,5 +1,5 @@
-#include "LzwEncoder.hpp"
-#include "LzwDecoder.hpp"
+#include "EncodingClasses/LzwClasses/LzwEncoder.hpp"
+#include "LzwClasses/LzwDecoder.hpp"
 
 using namespace std;
 

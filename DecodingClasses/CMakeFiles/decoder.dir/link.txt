@@ -1,0 +1,1 @@
+/usr/bin/clang++ CMakeFiles/decoder.dir/decoder.cpp.o CMakeFiles/decoder.dir/LzwClasses/LZWDecodingProcess.cpp.o CMakeFiles/decoder.dir/Decodings/GammaDecoding.cpp.o CMakeFiles/decoder.dir/Decodings/Decoding.cpp.o CMakeFiles/decoder.dir/LzwClasses/LzwDecoder.cpp.o CMakeFiles/decoder.dir/BitBuffers/BitReader.cpp.o -o decoder 
