@@ -12,6 +12,8 @@ void LZWEncodingProcess::setAlphabet(const std::vector<std::string>& alphabet) {
 
 void LZWEncodingProcess::runProcess(const std::string& inputfile, const std::string& outputfile) {
 
+    size_t counter = 0;
+
     std::ifstream input(inputfile);
 
     if (input.bad()) {
@@ -31,20 +33,23 @@ void LZWEncodingProcess::runProcess(const std::string& inputfile, const std::str
     std::string word = "";
 
     char symbol = input.get();
-
-    while(symbol != EOF) {
+    //std::cout<<symbol<<std::endl;
+    while(input.good()) {
+        counter++;
         word = symbol;
+     //   std::cout<<symbol<<std::endl;
         symbol = input.get();
-        while (symbol != EOF && temp.containsSymbol(word + std::string(1, symbol))) {
+        while (input.good() && temp.containsSymbol(word + std::string(1, symbol))) {
             word += symbol;
             symbol = input.get();
         }
-        if (symbol == EOF) {
+        if (input.bad()) {
             secondaryAlgorithm->encodeSymbol(temp.getCode(word));
             break;
         }
         secondaryAlgorithm->encodeSymbol(temp.getCode(word));
         temp.addCode(word + std::string(1, symbol));
     }
+    std::cout<<counter<<std::endl;
     secondaryAlgorithm->closeFile();
 }

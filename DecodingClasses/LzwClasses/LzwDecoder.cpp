@@ -17,6 +17,7 @@ LzwDecoder::LzwDecoder(std::map<std::string, std::uint32_t> startingAlphabet, ui
 
 std::string LzwDecoder::decode(uint32_t code) {
     std::string result;
+  //  std::cout<<code<<std::endl;
     if (!dictionary.contains(code)) {
         result = dictionary.at(old);
         result += previousSymbol;
@@ -27,6 +28,7 @@ std::string LzwDecoder::decode(uint32_t code) {
     previousSymbol = result[0];
     dictionary.insert(std::make_pair(++maxCode, dictionary.at(old) + previousSymbol[0]));
     old = code;
+   // std::cout<<result<<std::endl;
     return result;
 }
 

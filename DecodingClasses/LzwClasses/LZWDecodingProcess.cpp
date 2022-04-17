@@ -11,6 +11,8 @@ void LZWDecodingProcess::setAlphabet(const std::vector<std::string>& alphabet) {
 
 void LZWDecodingProcess::runProcess(const std::string& inputName, const std::string& outputName) {
 
+    size_t counter = 0;
+
     std::ofstream output(outputName);
     
     if (!output.good()) {
@@ -28,11 +30,13 @@ void LZWDecodingProcess::runProcess(const std::string& inputName, const std::str
     LzwDecoder decoder(tempMap, secondaryAlgorithm->decodeSymbol());
 
     std::string temp = decoder.initialize();
-    output<<temp;
+    output.write(temp.c_str(), temp.length());
 
     while (secondaryAlgorithm->good()) {
         temp = decoder.decode(secondaryAlgorithm->decodeSymbol());
-        output<<temp;
+        output.write(temp.c_str(), temp.length());
+        counter++;
     }
+    std::cout<<counter + 1<<std::endl;
     secondaryAlgorithm->closeFile();
 }
