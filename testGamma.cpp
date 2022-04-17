@@ -9,12 +9,12 @@ int main () {
     GammaEncoding encoder;
 
     encoder.openFile("temp.txt");
-    encoder.encodeSymbol(123);
-    encoder.encodeSymbol(321);
+    encoder.encodeSymbol(0xFFFFFFFF);
+   // encoder.encodeSymbol(321);
     encoder.closeFile();
-
+    cout<<"Decoding"<<endl;
     decoder.openFile("temp.txt");
     cout<<decoder.decodeSymbol()<<endl;
-    cout<<decoder.decodeSymbol()<<endl;
+  //  cout<<decoder.decodeSymbol()<<endl;
     decoder.closeFile();
 }

@@ -6,5 +6,5 @@
 class GammaEncoding : public Encoding {
     public:
         void encodeSymbol(uint32_t symbol) override final;
-
+        void closeFile() override final;
 };

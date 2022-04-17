@@ -1,4 +1,5 @@
 #include "BitReader.hpp"
+#include <iostream>
 
 BitReader::BitReader(const std::string& inputName) {
     input = std::ifstream(inputName);
@@ -25,6 +26,7 @@ bool BitReader::getBit() {
         bufferCounter = 0;
         buffer = input.get();
     }
+   // std::cout<<result<<std::endl;
     return result;
 }
 
@@ -33,7 +35,7 @@ void BitReader::open(const std::string& filename) {
         input.close();
     }
     input.open(filename);
-    buffer = 0;
+    buffer = input.get();
     bufferCounter = 0;
 }
 

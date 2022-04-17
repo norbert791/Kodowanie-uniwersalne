@@ -198,7 +198,8 @@ CMakeFiles/encoder.dir/BitBuffers/BitWriter.cpp.o: BitBuffers/BitWriter.cpp \
   /usr/include/c++/11.2.0/bits/codecvt.h \
   /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++io.h \
-  /usr/include/c++/11.2.0/bits/fstream.tcc
+  /usr/include/c++/11.2.0/bits/fstream.tcc \
+  /usr/include/c++/11.2.0/iostream
 
 CMakeFiles/encoder.dir/Encodings/Encoding.cpp.o: Encodings/Encoding.cpp \
   Encodings/Encoding.hpp \

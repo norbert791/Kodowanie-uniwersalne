@@ -7,7 +7,3 @@ void Decoding::openFile(const std::string& filename) {
 void Decoding::closeFile() {
     reader.close();
 }
-
-bool Decoding::good() {
-    return reader.good();
-}

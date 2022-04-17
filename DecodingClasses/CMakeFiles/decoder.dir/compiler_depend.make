@@ -198,7 +198,8 @@ CMakeFiles/decoder.dir/BitBuffers/BitReader.cpp.o: BitBuffers/BitReader.cpp \
   /usr/include/c++/11.2.0/bits/codecvt.h \
   /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++io.h \
-  /usr/include/c++/11.2.0/bits/fstream.tcc
+  /usr/include/c++/11.2.0/bits/fstream.tcc \
+  /usr/include/c++/11.2.0/iostream
 
 CMakeFiles/decoder.dir/Decodings/Decoding.cpp.o: Decodings/Decoding.cpp \
   Decodings/Decoding.hpp \
@@ -1788,6 +1789,10 @@ LzwClasses/LzwDecoder.cpp:
 
 /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++io.h:
 
+/usr/include/c++/11.2.0/ext/alloc_traits.h:
+
+/usr/include/c++/11.2.0/iostream:
+
 Decodings/Decoding.cpp:
 
 /usr/lib/clang/13.0.1/include/stdint.h:
@@ -1803,10 +1808,6 @@ LzwClasses/LZWDecodingProcess.cpp:
 /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:
 
 LzwClasses/LZWDecodingProcess.hpp:
-
-/usr/include/c++/11.2.0/ext/alloc_traits.h:
-
-/usr/include/c++/11.2.0/iostream:
 
 /usr/include/c++/11.2.0/bits/stl_uninitialized.h:
 

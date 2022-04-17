@@ -6,7 +6,7 @@ class Encoding {
     public:
         virtual void encodeSymbol(uint32_t symbol) = 0;
         void openFile(const std::string& filename);
-        void closeFile();
+        virtual void closeFile() = 0;
         virtual ~Encoding() = default;
     protected:
         BitWriter writer;

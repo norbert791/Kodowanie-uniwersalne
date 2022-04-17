@@ -23,7 +23,7 @@ void LZWEncodingProcess::runProcess(const std::string& inputfile, const std::str
     std::map<std::string, uint32_t> tempMap = {}; 
 
     for (uint32_t i = 0; i < alphabet.size(); i++) {
-        tempMap.insert(std::make_pair(alphabet[i], i));
+        tempMap.insert(std::make_pair(alphabet[i], i + 1));
     }
 
     LzwEncoder temp(tempMap);
