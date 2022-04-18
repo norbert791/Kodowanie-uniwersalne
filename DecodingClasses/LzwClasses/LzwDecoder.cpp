@@ -28,10 +28,11 @@ std::string LzwDecoder::decode(uint32_t code) {
     previousSymbol = result[0];
     dictionary.insert(std::make_pair(++maxCode, dictionary.at(old) + previousSymbol[0]));
     old = code;
-   // std::cout<<result<<std::endl;
+ //   std::cout<<result<<std::endl;
     return result;
 }
 
-std::string LzwDecoder::initialize() const {
+std::string LzwDecoder::initialize() {
+    previousSymbol = dictionary.at(old);
     return dictionary.at(old);
 }
