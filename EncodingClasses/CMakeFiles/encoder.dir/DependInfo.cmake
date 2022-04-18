@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/BitBuffers/BitWriter.cpp" "CMakeFiles/encoder.dir/BitBuffers/BitWriter.cpp.o" "gcc" "CMakeFiles/encoder.dir/BitBuffers/BitWriter.cpp.o.d"
+  "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/Encodings/DeltaEncoding.cpp" "CMakeFiles/encoder.dir/Encodings/DeltaEncoding.cpp.o" "gcc" "CMakeFiles/encoder.dir/Encodings/DeltaEncoding.cpp.o.d"
   "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/Encodings/Encoding.cpp" "CMakeFiles/encoder.dir/Encodings/Encoding.cpp.o" "gcc" "CMakeFiles/encoder.dir/Encodings/Encoding.cpp.o.d"
   "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/Encodings/GammaEncoding.cpp" "CMakeFiles/encoder.dir/Encodings/GammaEncoding.cpp.o" "gcc" "CMakeFiles/encoder.dir/Encodings/GammaEncoding.cpp.o.d"
   "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/LzwClasses/LZWEncodingProcess.cpp" "CMakeFiles/encoder.dir/LzwClasses/LZWEncodingProcess.cpp.o" "gcc" "CMakeFiles/encoder.dir/LzwClasses/LZWEncodingProcess.cpp.o.d"

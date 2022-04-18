@@ -2,8 +2,8 @@
 
 
 std::vector<bool> DeltaEncoding::generateGammaCode(uint32_t symbol) {
+    
     std::vector<bool> result = {};
-
     //Room for optimization: redundant bitshifts
     uint8_t length = 31;
 
@@ -11,7 +11,7 @@ std::vector<bool> DeltaEncoding::generateGammaCode(uint32_t symbol) {
         length--;
         symbol = symbol <<1;
     }
-
+  //  std::cout<<(int)length<<std::endl;
     for (auto i = 0; i < length; i++) {
         result.push_back(false);
     }
@@ -24,8 +24,8 @@ std::vector<bool> DeltaEncoding::generateGammaCode(uint32_t symbol) {
 }
 
 void DeltaEncoding::encodeSymbol(uint32_t symbol) {
+    
     std::vector<bool> result = {};
-
     uint8_t length = 32;
 
     while ((symbol & msbBitMask) != msbBitMask && length > 0) {
@@ -45,15 +45,15 @@ void DeltaEncoding::encodeSymbol(uint32_t symbol) {
     length = result.size() + 1;
     
     auto gamma = generateGammaCode(length);
-
-    std::cout<<gamma.size();
-    /*
+   // std::cout<<(int)length<<std::endl;
+ //   std::cout<<gamma.size()<<std::endl;
+    
     for (auto t : gamma) {
         writer.writeBit(t);
     }
     for (auto t : result) {
         writer.writeBit(t);
-    }*/
+    }
 }
 
 void DeltaEncoding::closeFile() { 

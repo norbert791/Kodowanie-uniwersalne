@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/decoder.dir/BitBuffers/BitReader.cpp.o.d"
   "CMakeFiles/decoder.dir/Decodings/Decoding.cpp.o"
   "CMakeFiles/decoder.dir/Decodings/Decoding.cpp.o.d"
+  "CMakeFiles/decoder.dir/Decodings/DeltaDecoding.cpp.o"
+  "CMakeFiles/decoder.dir/Decodings/DeltaDecoding.cpp.o.d"
   "CMakeFiles/decoder.dir/Decodings/GammaDecoding.cpp.o"
   "CMakeFiles/decoder.dir/Decodings/GammaDecoding.cpp.o.d"
   "CMakeFiles/decoder.dir/LzwClasses/LZWDecodingProcess.cpp.o"

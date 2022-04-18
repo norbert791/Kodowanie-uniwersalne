@@ -12,6 +12,7 @@ set(SRC_LIST
         Decodings/Decoding.cpp
         LzwClasses/LzwDecoder.cpp
         BitBuffers/BitReader.cpp
+        Decodings/DeltaDecoding.cpp
 )
 
 set(CMAKE_CXX_STANDARD 20)

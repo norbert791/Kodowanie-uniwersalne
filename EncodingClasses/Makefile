@@ -153,6 +153,30 @@ BitBuffers/BitWriter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/BitBuffers/BitWriter.cpp.s
 .PHONY : BitBuffers/BitWriter.cpp.s
 
+Encodings/DeltaEncoding.o: Encodings/DeltaEncoding.cpp.o
+.PHONY : Encodings/DeltaEncoding.o
+
+# target to build an object file
+Encodings/DeltaEncoding.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/Encodings/DeltaEncoding.cpp.o
+.PHONY : Encodings/DeltaEncoding.cpp.o
+
+Encodings/DeltaEncoding.i: Encodings/DeltaEncoding.cpp.i
+.PHONY : Encodings/DeltaEncoding.i
+
+# target to preprocess a source file
+Encodings/DeltaEncoding.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/Encodings/DeltaEncoding.cpp.i
+.PHONY : Encodings/DeltaEncoding.cpp.i
+
+Encodings/DeltaEncoding.s: Encodings/DeltaEncoding.cpp.s
+.PHONY : Encodings/DeltaEncoding.s
+
+# target to generate assembly for a file
+Encodings/DeltaEncoding.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/Encodings/DeltaEncoding.cpp.s
+.PHONY : Encodings/DeltaEncoding.cpp.s
+
 Encodings/Encoding.o: Encodings/Encoding.cpp.o
 .PHONY : Encodings/Encoding.o
 
@@ -285,6 +309,9 @@ help:
 	@echo "... BitBuffers/BitWriter.o"
 	@echo "... BitBuffers/BitWriter.i"
 	@echo "... BitBuffers/BitWriter.s"
+	@echo "... Encodings/DeltaEncoding.o"
+	@echo "... Encodings/DeltaEncoding.i"
+	@echo "... Encodings/DeltaEncoding.s"
 	@echo "... Encodings/Encoding.o"
 	@echo "... Encodings/Encoding.i"
 	@echo "... Encodings/Encoding.s"

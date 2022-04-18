@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/DecodingClasses/BitBuffers/BitReader.cpp" "CMakeFiles/decoder.dir/BitBuffers/BitReader.cpp.o" "gcc" "CMakeFiles/decoder.dir/BitBuffers/BitReader.cpp.o.d"
   "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/DecodingClasses/Decodings/Decoding.cpp" "CMakeFiles/decoder.dir/Decodings/Decoding.cpp.o" "gcc" "CMakeFiles/decoder.dir/Decodings/Decoding.cpp.o.d"
+  "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/DecodingClasses/Decodings/DeltaDecoding.cpp" "CMakeFiles/decoder.dir/Decodings/DeltaDecoding.cpp.o" "gcc" "CMakeFiles/decoder.dir/Decodings/DeltaDecoding.cpp.o.d"
   "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/DecodingClasses/Decodings/GammaDecoding.cpp" "CMakeFiles/decoder.dir/Decodings/GammaDecoding.cpp.o" "gcc" "CMakeFiles/decoder.dir/Decodings/GammaDecoding.cpp.o.d"
   "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/DecodingClasses/LzwClasses/LZWDecodingProcess.cpp" "CMakeFiles/decoder.dir/LzwClasses/LZWDecodingProcess.cpp.o" "gcc" "CMakeFiles/decoder.dir/LzwClasses/LZWDecodingProcess.cpp.o.d"
   "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/DecodingClasses/LzwClasses/LzwDecoder.cpp" "CMakeFiles/decoder.dir/LzwClasses/LzwDecoder.cpp.o" "gcc" "CMakeFiles/decoder.dir/LzwClasses/LzwDecoder.cpp.o.d"

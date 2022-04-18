@@ -177,6 +177,30 @@ Decodings/Decoding.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/Decodings/Decoding.cpp.s
 .PHONY : Decodings/Decoding.cpp.s
 
+Decodings/DeltaDecoding.o: Decodings/DeltaDecoding.cpp.o
+.PHONY : Decodings/DeltaDecoding.o
+
+# target to build an object file
+Decodings/DeltaDecoding.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/Decodings/DeltaDecoding.cpp.o
+.PHONY : Decodings/DeltaDecoding.cpp.o
+
+Decodings/DeltaDecoding.i: Decodings/DeltaDecoding.cpp.i
+.PHONY : Decodings/DeltaDecoding.i
+
+# target to preprocess a source file
+Decodings/DeltaDecoding.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/Decodings/DeltaDecoding.cpp.i
+.PHONY : Decodings/DeltaDecoding.cpp.i
+
+Decodings/DeltaDecoding.s: Decodings/DeltaDecoding.cpp.s
+.PHONY : Decodings/DeltaDecoding.s
+
+# target to generate assembly for a file
+Decodings/DeltaDecoding.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/Decodings/DeltaDecoding.cpp.s
+.PHONY : Decodings/DeltaDecoding.cpp.s
+
 Decodings/GammaDecoding.o: Decodings/GammaDecoding.cpp.o
 .PHONY : Decodings/GammaDecoding.o
 
@@ -288,6 +312,9 @@ help:
 	@echo "... Decodings/Decoding.o"
 	@echo "... Decodings/Decoding.i"
 	@echo "... Decodings/Decoding.s"
+	@echo "... Decodings/DeltaDecoding.o"
+	@echo "... Decodings/DeltaDecoding.i"
+	@echo "... Decodings/DeltaDecoding.s"
 	@echo "... Decodings/GammaDecoding.o"
 	@echo "... Decodings/GammaDecoding.i"
 	@echo "... Decodings/GammaDecoding.s"

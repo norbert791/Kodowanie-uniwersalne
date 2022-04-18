@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/encoder.dir/BitBuffers/BitWriter.cpp.o"
   "CMakeFiles/encoder.dir/BitBuffers/BitWriter.cpp.o.d"
+  "CMakeFiles/encoder.dir/Encodings/DeltaEncoding.cpp.o"
+  "CMakeFiles/encoder.dir/Encodings/DeltaEncoding.cpp.o.d"
   "CMakeFiles/encoder.dir/Encodings/Encoding.cpp.o"
   "CMakeFiles/encoder.dir/Encodings/Encoding.cpp.o.d"
   "CMakeFiles/encoder.dir/Encodings/GammaEncoding.cpp.o"

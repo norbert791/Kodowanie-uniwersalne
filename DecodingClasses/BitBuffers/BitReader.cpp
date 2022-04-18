@@ -26,7 +26,7 @@ bool BitReader::getBit() {
         bufferCounter = 0;
         buffer = input.get();
     }
-    std::cout<<result<<std::endl;
+    //std::cout<<result<<std::endl;
     return result;
 }
 

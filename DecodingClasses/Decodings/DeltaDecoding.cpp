@@ -1,4 +1,5 @@
 #include "DeltaDecoding.hpp"
+#include <iostream>
 
 void DeltaDecoding::decodeToCache() {
     constexpr uint8_t eofCode = 33;
@@ -23,7 +24,8 @@ void DeltaDecoding::decodeToCache() {
     uint32_t result = 1;
 
     while (counter > 0) {
-        result = (result <<1) + reader.getBit() ? 1 : 0;
+        result = (result <<1) + (reader.getBit() ? 1 : 0);
+        counter--;
     }
     cache = result;
 }

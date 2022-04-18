@@ -2,10 +2,13 @@
 #include <memory>
 #include "LzwClasses/LZWEncodingProcess.hpp"
 #include "Encodings/GammaEncoding.hpp"
+#include "Encodings/DeltaEncoding.hpp"
+#include <string>
+#include "string.h"
 
-int main(int argC, char** argV) {
+int main(int argc, char** argv) {
 
-    if (argC < 3) {
+    if (argc < 3) {
         std::cerr<<"Not enough arguments"<<std::endl;
         return 1;
     }
@@ -19,8 +22,24 @@ int main(int argC, char** argV) {
     }
 
     process.setAlphabet(temp);
-    process.setSecondaryAlgorithm(std::make_unique<GammaEncoding>());
-    process.runProcess(argV[1], argV[2]);
+    if (argc == 4 && strlen(argv[3]) == 2 && argv[3][0] == '-') {
+        switch (argv[3][1])
+        {
+        case 'g':
+            process.setSecondaryAlgorithm(std::make_unique<GammaEncoding>());
+            break;
+        case 'd':
+            process.setSecondaryAlgorithm(std::make_unique<DeltaEncoding>());
+            break;
+        default:
+            process.setSecondaryAlgorithm(std::make_unique<GammaEncoding>());
+            break;
+        }
+    }
+    else {
+        process.setSecondaryAlgorithm(std::make_unique<GammaEncoding>());
+    }
+    process.runProcess(argv[1], argv[2]);
 
     return 0;
 }

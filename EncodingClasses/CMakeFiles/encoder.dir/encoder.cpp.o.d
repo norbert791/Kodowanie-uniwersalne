@@ -212,4 +212,6 @@ CMakeFiles/encoder.dir/encoder.cpp.o: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++io.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/bits/fstream.tcc \
-  /home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/Encodings/GammaEncoding.hpp
+  /home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/Encodings/GammaEncoding.hpp \
+  /home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/Encodings/DeltaEncoding.hpp \
+  /usr/include/string.h /usr/include/strings.h
