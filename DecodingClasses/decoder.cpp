@@ -3,6 +3,7 @@
 #include "LzwClasses/LZWDecodingProcess.hpp"
 #include "Decodings/GammaDecoding.hpp"
 #include "Decodings/DeltaDecoding.hpp"
+#include "Decodings/OmegaDecoding.hpp"
 #include "string.h"
 
 int main(int argc, char** argv) {
@@ -29,6 +30,9 @@ int main(int argc, char** argv) {
             break;
         case 'd':
             process.setSecondaryAlgorithm(std::make_unique<DeltaDecoding>());
+            break;
+        case 'o':
+            process.setSecondaryAlgorithm(std::make_unique<OmegaDecoding>());
             break;
         default:
             process.setSecondaryAlgorithm(std::make_unique<GammaDecoding>());

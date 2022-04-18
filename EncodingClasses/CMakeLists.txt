@@ -13,6 +13,7 @@ set(SRC_LIST
         LzwClasses/LzwEncoder.cpp
         BitBuffers/BitWriter.cpp
         Encodings/DeltaEncoding.cpp
+        Encodings/OmegaEncoding.cpp
 )
 
 set(CMAKE_CXX_STANDARD 20)

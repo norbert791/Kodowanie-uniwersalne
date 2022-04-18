@@ -225,6 +225,30 @@ Decodings/GammaDecoding.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/Decodings/GammaDecoding.cpp.s
 .PHONY : Decodings/GammaDecoding.cpp.s
 
+Decodings/OmegaDecoding.o: Decodings/OmegaDecoding.cpp.o
+.PHONY : Decodings/OmegaDecoding.o
+
+# target to build an object file
+Decodings/OmegaDecoding.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/Decodings/OmegaDecoding.cpp.o
+.PHONY : Decodings/OmegaDecoding.cpp.o
+
+Decodings/OmegaDecoding.i: Decodings/OmegaDecoding.cpp.i
+.PHONY : Decodings/OmegaDecoding.i
+
+# target to preprocess a source file
+Decodings/OmegaDecoding.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/Decodings/OmegaDecoding.cpp.i
+.PHONY : Decodings/OmegaDecoding.cpp.i
+
+Decodings/OmegaDecoding.s: Decodings/OmegaDecoding.cpp.s
+.PHONY : Decodings/OmegaDecoding.s
+
+# target to generate assembly for a file
+Decodings/OmegaDecoding.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/Decodings/OmegaDecoding.cpp.s
+.PHONY : Decodings/OmegaDecoding.cpp.s
+
 LzwClasses/LZWDecodingProcess.o: LzwClasses/LZWDecodingProcess.cpp.o
 .PHONY : LzwClasses/LZWDecodingProcess.o
 
@@ -318,6 +342,9 @@ help:
 	@echo "... Decodings/GammaDecoding.o"
 	@echo "... Decodings/GammaDecoding.i"
 	@echo "... Decodings/GammaDecoding.s"
+	@echo "... Decodings/OmegaDecoding.o"
+	@echo "... Decodings/OmegaDecoding.i"
+	@echo "... Decodings/OmegaDecoding.s"
 	@echo "... LzwClasses/LZWDecodingProcess.o"
 	@echo "... LzwClasses/LZWDecodingProcess.i"
 	@echo "... LzwClasses/LZWDecodingProcess.s"

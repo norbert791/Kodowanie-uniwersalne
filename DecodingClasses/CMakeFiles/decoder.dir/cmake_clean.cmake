@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/decoder.dir/Decodings/DeltaDecoding.cpp.o.d"
   "CMakeFiles/decoder.dir/Decodings/GammaDecoding.cpp.o"
   "CMakeFiles/decoder.dir/Decodings/GammaDecoding.cpp.o.d"
+  "CMakeFiles/decoder.dir/Decodings/OmegaDecoding.cpp.o"
+  "CMakeFiles/decoder.dir/Decodings/OmegaDecoding.cpp.o.d"
   "CMakeFiles/decoder.dir/LzwClasses/LZWDecodingProcess.cpp.o"
   "CMakeFiles/decoder.dir/LzwClasses/LZWDecodingProcess.cpp.o.d"
   "CMakeFiles/decoder.dir/LzwClasses/LzwDecoder.cpp.o"

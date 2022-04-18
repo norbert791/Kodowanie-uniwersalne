@@ -1,7 +1,7 @@
 #pragma once
 #include "Decoding.hpp"
 
-class DeltaDecoding : public Decoding {
+class OmegaDecoding : public Decoding {
     public:
         uint32_t decodeSymbol() override final;
         bool good() override final;

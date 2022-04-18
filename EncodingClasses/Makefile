@@ -225,6 +225,30 @@ Encodings/GammaEncoding.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/Encodings/GammaEncoding.cpp.s
 .PHONY : Encodings/GammaEncoding.cpp.s
 
+Encodings/OmegaEncoding.o: Encodings/OmegaEncoding.cpp.o
+.PHONY : Encodings/OmegaEncoding.o
+
+# target to build an object file
+Encodings/OmegaEncoding.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/Encodings/OmegaEncoding.cpp.o
+.PHONY : Encodings/OmegaEncoding.cpp.o
+
+Encodings/OmegaEncoding.i: Encodings/OmegaEncoding.cpp.i
+.PHONY : Encodings/OmegaEncoding.i
+
+# target to preprocess a source file
+Encodings/OmegaEncoding.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/Encodings/OmegaEncoding.cpp.i
+.PHONY : Encodings/OmegaEncoding.cpp.i
+
+Encodings/OmegaEncoding.s: Encodings/OmegaEncoding.cpp.s
+.PHONY : Encodings/OmegaEncoding.s
+
+# target to generate assembly for a file
+Encodings/OmegaEncoding.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/Encodings/OmegaEncoding.cpp.s
+.PHONY : Encodings/OmegaEncoding.cpp.s
+
 LzwClasses/LZWEncodingProcess.o: LzwClasses/LZWEncodingProcess.cpp.o
 .PHONY : LzwClasses/LZWEncodingProcess.o
 
@@ -318,6 +342,9 @@ help:
 	@echo "... Encodings/GammaEncoding.o"
 	@echo "... Encodings/GammaEncoding.i"
 	@echo "... Encodings/GammaEncoding.s"
+	@echo "... Encodings/OmegaEncoding.o"
+	@echo "... Encodings/OmegaEncoding.i"
+	@echo "... Encodings/OmegaEncoding.s"
 	@echo "... LzwClasses/LZWEncodingProcess.o"
 	@echo "... LzwClasses/LZWEncodingProcess.i"
 	@echo "... LzwClasses/LZWEncodingProcess.s"
