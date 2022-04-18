@@ -12,7 +12,7 @@ BitWriter::BitWriter(const std::string& outputName) {
     }
 
 void BitWriter::writeBit(const bool input) {
-   // std::cout<<input<<std::endl;
+    std::cout<<input<<std::endl;
     buffer = (unsigned char)(buffer<<1);
     buffer += input ? 1 : 0;
     bufferCounter++;
