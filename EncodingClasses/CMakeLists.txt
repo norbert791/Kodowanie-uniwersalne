@@ -15,6 +15,7 @@ set(SRC_LIST
         Encodings/DeltaEncoding.cpp
         Encodings/OmegaEncoding.cpp
         Encodings/FibonacciEncoding.cpp
+        LzwClasses/Tracker.cpp
 )
 
 set(CMAKE_CXX_STANDARD 20)

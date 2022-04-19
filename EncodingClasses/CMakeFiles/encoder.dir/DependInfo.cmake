@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/Encodings/OmegaEncoding.cpp" "CMakeFiles/encoder.dir/Encodings/OmegaEncoding.cpp.o" "gcc" "CMakeFiles/encoder.dir/Encodings/OmegaEncoding.cpp.o.d"
   "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/LzwClasses/LZWEncodingProcess.cpp" "CMakeFiles/encoder.dir/LzwClasses/LZWEncodingProcess.cpp.o" "gcc" "CMakeFiles/encoder.dir/LzwClasses/LZWEncodingProcess.cpp.o.d"
   "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/LzwClasses/LzwEncoder.cpp" "CMakeFiles/encoder.dir/LzwClasses/LzwEncoder.cpp.o" "gcc" "CMakeFiles/encoder.dir/LzwClasses/LzwEncoder.cpp.o.d"
+  "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/LzwClasses/Tracker.cpp" "CMakeFiles/encoder.dir/LzwClasses/Tracker.cpp.o" "gcc" "CMakeFiles/encoder.dir/LzwClasses/Tracker.cpp.o.d"
   "/home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/EncodingClasses/encoder.cpp" "CMakeFiles/encoder.dir/encoder.cpp.o" "gcc" "CMakeFiles/encoder.dir/encoder.cpp.o.d"
   )
 

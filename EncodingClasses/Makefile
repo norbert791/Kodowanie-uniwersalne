@@ -321,6 +321,30 @@ LzwClasses/LzwEncoder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/LzwClasses/LzwEncoder.cpp.s
 .PHONY : LzwClasses/LzwEncoder.cpp.s
 
+LzwClasses/Tracker.o: LzwClasses/Tracker.cpp.o
+.PHONY : LzwClasses/Tracker.o
+
+# target to build an object file
+LzwClasses/Tracker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/LzwClasses/Tracker.cpp.o
+.PHONY : LzwClasses/Tracker.cpp.o
+
+LzwClasses/Tracker.i: LzwClasses/Tracker.cpp.i
+.PHONY : LzwClasses/Tracker.i
+
+# target to preprocess a source file
+LzwClasses/Tracker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/LzwClasses/Tracker.cpp.i
+.PHONY : LzwClasses/Tracker.cpp.i
+
+LzwClasses/Tracker.s: LzwClasses/Tracker.cpp.s
+.PHONY : LzwClasses/Tracker.s
+
+# target to generate assembly for a file
+LzwClasses/Tracker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/LzwClasses/Tracker.cpp.s
+.PHONY : LzwClasses/Tracker.cpp.s
+
 encoder.o: encoder.cpp.o
 .PHONY : encoder.o
 
@@ -378,6 +402,9 @@ help:
 	@echo "... LzwClasses/LzwEncoder.o"
 	@echo "... LzwClasses/LzwEncoder.i"
 	@echo "... LzwClasses/LzwEncoder.s"
+	@echo "... LzwClasses/Tracker.o"
+	@echo "... LzwClasses/Tracker.i"
+	@echo "... LzwClasses/Tracker.s"
 	@echo "... encoder.o"
 	@echo "... encoder.i"
 	@echo "... encoder.s"

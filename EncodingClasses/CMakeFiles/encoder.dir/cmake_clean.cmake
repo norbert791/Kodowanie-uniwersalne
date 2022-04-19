@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/encoder.dir/LzwClasses/LZWEncodingProcess.cpp.o.d"
   "CMakeFiles/encoder.dir/LzwClasses/LzwEncoder.cpp.o"
   "CMakeFiles/encoder.dir/LzwClasses/LzwEncoder.cpp.o.d"
+  "CMakeFiles/encoder.dir/LzwClasses/Tracker.cpp.o"
+  "CMakeFiles/encoder.dir/LzwClasses/Tracker.cpp.o.d"
   "CMakeFiles/encoder.dir/encoder.cpp.o"
   "CMakeFiles/encoder.dir/encoder.cpp.o.d"
   "encoder"
