@@ -201,6 +201,30 @@ Encodings/Encoding.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/Encodings/Encoding.cpp.s
 .PHONY : Encodings/Encoding.cpp.s
 
+Encodings/FibonacciEncoding.o: Encodings/FibonacciEncoding.cpp.o
+.PHONY : Encodings/FibonacciEncoding.o
+
+# target to build an object file
+Encodings/FibonacciEncoding.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/Encodings/FibonacciEncoding.cpp.o
+.PHONY : Encodings/FibonacciEncoding.cpp.o
+
+Encodings/FibonacciEncoding.i: Encodings/FibonacciEncoding.cpp.i
+.PHONY : Encodings/FibonacciEncoding.i
+
+# target to preprocess a source file
+Encodings/FibonacciEncoding.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/Encodings/FibonacciEncoding.cpp.i
+.PHONY : Encodings/FibonacciEncoding.cpp.i
+
+Encodings/FibonacciEncoding.s: Encodings/FibonacciEncoding.cpp.s
+.PHONY : Encodings/FibonacciEncoding.s
+
+# target to generate assembly for a file
+Encodings/FibonacciEncoding.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/Encodings/FibonacciEncoding.cpp.s
+.PHONY : Encodings/FibonacciEncoding.cpp.s
+
 Encodings/GammaEncoding.o: Encodings/GammaEncoding.cpp.o
 .PHONY : Encodings/GammaEncoding.o
 
@@ -339,6 +363,9 @@ help:
 	@echo "... Encodings/Encoding.o"
 	@echo "... Encodings/Encoding.i"
 	@echo "... Encodings/Encoding.s"
+	@echo "... Encodings/FibonacciEncoding.o"
+	@echo "... Encodings/FibonacciEncoding.i"
+	@echo "... Encodings/FibonacciEncoding.s"
 	@echo "... Encodings/GammaEncoding.o"
 	@echo "... Encodings/GammaEncoding.i"
 	@echo "... Encodings/GammaEncoding.s"

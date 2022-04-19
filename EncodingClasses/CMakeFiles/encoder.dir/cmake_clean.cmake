@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/encoder.dir/Encodings/DeltaEncoding.cpp.o.d"
   "CMakeFiles/encoder.dir/Encodings/Encoding.cpp.o"
   "CMakeFiles/encoder.dir/Encodings/Encoding.cpp.o.d"
+  "CMakeFiles/encoder.dir/Encodings/FibonacciEncoding.cpp.o"
+  "CMakeFiles/encoder.dir/Encodings/FibonacciEncoding.cpp.o.d"
   "CMakeFiles/encoder.dir/Encodings/GammaEncoding.cpp.o"
   "CMakeFiles/encoder.dir/Encodings/GammaEncoding.cpp.o.d"
   "CMakeFiles/encoder.dir/Encodings/OmegaEncoding.cpp.o"

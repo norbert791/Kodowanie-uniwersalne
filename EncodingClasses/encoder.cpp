@@ -4,6 +4,7 @@
 #include "Encodings/GammaEncoding.hpp"
 #include "Encodings/DeltaEncoding.hpp"
 #include "Encodings/OmegaEncoding.hpp"
+#include "Encodings/FibonacciEncoding.hpp"
 #include <string>
 #include "string.h"
 
@@ -34,6 +35,9 @@ int main(int argc, char** argv) {
             break;
         case 'o':
             process.setSecondaryAlgorithm(std::make_unique<OmegaEncoding>());
+            break;
+        case 'f':
+            process.setSecondaryAlgorithm(std::make_unique<FibonacciEncoding>());
             break;
         default:
             process.setSecondaryAlgorithm(std::make_unique<GammaEncoding>());

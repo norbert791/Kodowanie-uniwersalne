@@ -14,6 +14,7 @@ set(SRC_LIST
         BitBuffers/BitReader.cpp
         Decodings/DeltaDecoding.cpp
         Decodings/OmegaDecoding.cpp
+        Decodings/FibonacciDecoding.cpp
         )
 
 set(CMAKE_CXX_STANDARD 20)

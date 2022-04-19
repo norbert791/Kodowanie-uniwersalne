@@ -201,6 +201,30 @@ Decodings/DeltaDecoding.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/Decodings/DeltaDecoding.cpp.s
 .PHONY : Decodings/DeltaDecoding.cpp.s
 
+Decodings/FibonacciDecoding.o: Decodings/FibonacciDecoding.cpp.o
+.PHONY : Decodings/FibonacciDecoding.o
+
+# target to build an object file
+Decodings/FibonacciDecoding.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/Decodings/FibonacciDecoding.cpp.o
+.PHONY : Decodings/FibonacciDecoding.cpp.o
+
+Decodings/FibonacciDecoding.i: Decodings/FibonacciDecoding.cpp.i
+.PHONY : Decodings/FibonacciDecoding.i
+
+# target to preprocess a source file
+Decodings/FibonacciDecoding.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/Decodings/FibonacciDecoding.cpp.i
+.PHONY : Decodings/FibonacciDecoding.cpp.i
+
+Decodings/FibonacciDecoding.s: Decodings/FibonacciDecoding.cpp.s
+.PHONY : Decodings/FibonacciDecoding.s
+
+# target to generate assembly for a file
+Decodings/FibonacciDecoding.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/Decodings/FibonacciDecoding.cpp.s
+.PHONY : Decodings/FibonacciDecoding.cpp.s
+
 Decodings/GammaDecoding.o: Decodings/GammaDecoding.cpp.o
 .PHONY : Decodings/GammaDecoding.o
 
@@ -339,6 +363,9 @@ help:
 	@echo "... Decodings/DeltaDecoding.o"
 	@echo "... Decodings/DeltaDecoding.i"
 	@echo "... Decodings/DeltaDecoding.s"
+	@echo "... Decodings/FibonacciDecoding.o"
+	@echo "... Decodings/FibonacciDecoding.i"
+	@echo "... Decodings/FibonacciDecoding.s"
 	@echo "... Decodings/GammaDecoding.o"
 	@echo "... Decodings/GammaDecoding.i"
 	@echo "... Decodings/GammaDecoding.s"

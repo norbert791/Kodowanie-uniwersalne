@@ -215,4 +215,6 @@ CMakeFiles/decoder.dir/decoder.cpp.o: \
   /home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/DecodingClasses/Decodings/GammaDecoding.hpp \
   /home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/DecodingClasses/Decodings/DeltaDecoding.hpp \
   /home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/DecodingClasses/Decodings/OmegaDecoding.hpp \
+  /home/norbert/Dokumenty/wppt/semestr4/kodowanie/lista3/Kodowanie-uniwersalne/DecodingClasses/Decodings/FibonacciDecoding.hpp \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/limits \
   /usr/include/string.h /usr/include/strings.h
