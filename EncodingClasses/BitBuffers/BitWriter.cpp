@@ -18,6 +18,7 @@ void BitWriter::writeBit(const bool input) {
     bufferCounter++;
     if (bufferCounter == 8) {
         bufferCounter = 0;
+        bytesWrote++;
         output.put(buffer);
         buffer = 0;
     }
@@ -29,6 +30,7 @@ BitWriter::~BitWriter() {
             buffer = (uc)(buffer << 1);
             bufferCounter++;
         }
+        bytesWrote++;
         output.put(buffer);
     }
     output.close();
@@ -42,6 +44,7 @@ void BitWriter::open(const std::string& filename) {
     if (!output.good()) {
         throw std::logic_error("IO exception");
     }
+    bytesWrote = 0;
 }
 
 void BitWriter::close() {
@@ -50,7 +53,12 @@ void BitWriter::close() {
             buffer = (uc)(buffer << 1);
             bufferCounter++;
         }
+        bytesWrote++;
         output.put(buffer);
     }
     output.close();
+}
+
+size_t BitWriter::getBytesWrote() {
+    return bytesWrote;
 }

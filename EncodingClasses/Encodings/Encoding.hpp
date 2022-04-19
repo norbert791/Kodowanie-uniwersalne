@@ -8,6 +8,7 @@ class Encoding {
         void openFile(const std::string& filename);
         virtual void closeFile() = 0;
         virtual ~Encoding() = default;
+        size_t getBytesWroter();
     protected:
         BitWriter writer;
 };

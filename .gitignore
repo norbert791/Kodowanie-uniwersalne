@@ -3,3 +3,17 @@
 
 # Ada Library Information
 *.ali
+
+.vscode/*
+
+*/Makefile
+
+#redundant cmake files
+*/CMakeCache.txt
+*/cmake_install.cmake
+*/CMakeFiles
+
+#execs
+
+EncodingClasses/encoder
+DecodingClasses/decoder

@@ -1,8 +1,8 @@
 #pragma once
-#include<iostream>
-#include<string>
-#include<map>
-#include<vector>
+#include <iostream>
+#include <string>
+#include <map>
+#include <vector>
 
 class LzwEncoder {
     public:
@@ -15,5 +15,4 @@ class LzwEncoder {
     private:
         std::map<std::string, uint32_t> dictionary;
         uint32_t maxCode = 0;
-        
 };

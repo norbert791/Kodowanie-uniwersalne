@@ -1,0 +1,73 @@
+
+testFiles/file-sample_1MB.docx
+Original Entropy: 7.99849
+Original length: 1026737
+Encoded Entropy: 15.5158
+Encoded length: 1450674
+Compression rate: 0.707765
+
+
+testFiles/monte_cristo.txt
+Original Entropy: 4.62759
+Original length: 2725263
+Encoded Entropy: 17.0714
+Encoded length: 1286486
+Compression rate: 2.11838
+
+
+testFiles/pan-tadeusz-czyli-ostatni-zajazd-na-litwie.txt
+Original Entropy: 5.03925
+Original length: 482543
+Encoded Entropy: 14.8831
+Encoded length: 279961
+Compression rate: 1.72361
+
+
+testFiles/sample_5184×3456.jpg
+Original Entropy: 7.9684
+Original length: 5554548
+Encoded Entropy: 16.8197
+Encoded length: 7595153
+Compression rate: 0.731328
+
+
+testFiles/sample_960x540.mp4
+Original Entropy: 7.99788
+Original length: 1320776
+Encoded Entropy: 15.6978
+Encoded length: 1865445
+Compression rate: 0.708022
+
+
+testFiles/test1.bin
+Original Entropy: 2.04493e-05
+Original length: 1048577
+Encoded Entropy: 10.4985
+Encoded length: 2763
+Compression rate: 379.507
+
+
+testFiles/test2.bin
+Original Entropy: 8
+Original length: 1048577
+Encoded Entropy: 14.4858
+Encoded length: 58033
+Compression rate: 18.0686
+
+
+testFiles/test3.bin
+Original Entropy: 8
+Original length: 1048577
+Encoded Entropy: 17.0429
+Encoded length: 1147957
+Compression rate: 0.913429
+
+
+testFiles/The Count of Monte Cristo.pdf
+Original Entropy: 7.95033
+Original length: 3072151
+Encoded Entropy: 16.16
+Encoded length: 4126861
+Compression rate: 0.744428
+
+

@@ -1,6 +1,7 @@
 #include "LZWEncodingProcess.hpp"
 #include "../BitBuffers/BitWriter.hpp"
 #include "LzwEncoder.hpp"
+#include "Tracker.hpp"
 
 void LZWEncodingProcess::setSecondaryAlgorithm(std::unique_ptr<Encoding> encoding) {
     secondaryAlgorithm = std::move(encoding);
@@ -11,6 +12,8 @@ void LZWEncodingProcess::setAlphabet(const std::vector<std::string>& alphabet) {
 }
 
 void LZWEncodingProcess::runProcess(const std::string& inputfile, const std::string& outputfile) {
+
+    Tracker tracker;
 
     std::ifstream input(inputfile);
 
@@ -26,24 +29,42 @@ void LZWEncodingProcess::runProcess(const std::string& inputfile, const std::str
         tempMap.insert(std::make_pair(alphabet[i], i + 1));
     }
 
-    LzwEncoder temp(tempMap);
+    LzwEncoder encoder(tempMap);
 
     std::string word = "";
 
     char symbol = input.get();
+
+    tracker.addOriginalSymbol((unsigned char) symbol);
+
     while(input.good()) {
         word = symbol;
         symbol = input.get();
-        while (input.good() && temp.containsSymbol(word + std::string(1, symbol))) {
+        tracker.addOriginalSymbol((unsigned char) symbol);
+
+        while (input.good() && encoder.containsSymbol(word + std::string(1, symbol))) {
             word += symbol;
             symbol = input.get();
+            tracker.addOriginalSymbol((unsigned char) symbol);
         }
         if (input.bad()) {
-            secondaryAlgorithm->encodeSymbol(temp.getCode(word));
+            uint32_t temp = encoder.getCode(word);
+            tracker.addEncodedSymbol(temp);
+            secondaryAlgorithm->encodeSymbol(temp);
             break;
         }
-        secondaryAlgorithm->encodeSymbol(temp.getCode(word));
-        temp.addCode(word + std::string(1, symbol));
+        uint32_t temp = encoder.getCode(word);
+        tracker.addEncodedSymbol(temp);
+        secondaryAlgorithm->encodeSymbol(temp);
+        encoder.addCode(word + std::string(1, symbol));
     }
     secondaryAlgorithm->closeFile();
+    
+    tracker.compute();
+    std::cout<<inputfile<<std::endl;
+    std::cout<<"Original Entropy: "<<tracker.getOriginalEntropy()<<std::endl;
+    std::cout<<"Original length: "<<tracker.getOriginalLength()<<std::endl;
+    std::cout<<"Encoded Entropy: "<<tracker.getEncodedEntropy()<<std::endl;
+    std::cout<<"Encoded length: "<<secondaryAlgorithm->getBytesWroter()<<std::endl;
+    std::cout<<"Compression rate: "<<1.0 * tracker.getOriginalLength() / secondaryAlgorithm->getBytesWroter()<<std::endl;
 }
